@@ -362,6 +362,8 @@ uint dhd_download_fw_on_driverload = TRUE;
  * example nvram_path[MOD_PARAM_PATHLEN]="/projects/wlan/nvram.txt"
  */
 
+
+/* TODO: Remove hack, we must to be allowed to set parameters for module from BoardConfig define */
 char firmware_path[MOD_PARAM_PATHLEN]="/system/etc/wifi/bcmdhd_sta.bin";
 char nvram_path[MOD_PARAM_PATHLEN]="/system/etc/wifi/nvram_net.txt";
 
