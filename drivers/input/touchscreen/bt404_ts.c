@@ -1492,7 +1492,7 @@ static void bt404_ts_report_touch_data(struct bt404_ts_data *data,
 						cur->coord[i].width);
 				prev->coord[i].sub_status &= ~(0x01);
 			}
-
+//Meticulus: touch up
 			input_mt_slot(data->input_dev_ts, i);
 			input_mt_report_slot_state(data->input_dev_ts,
 							MT_TOOL_FINGER, false);
@@ -1596,7 +1596,7 @@ static void bt404_ts_report_touch_data(struct bt404_ts_data *data,
 						cur->coord[i].width);
 #endif
 			}
-
+//Meticulus: touch down
 			input_mt_slot(data->input_dev_ts, i);
 			input_mt_report_slot_state(data->input_dev_ts,
 						   MT_TOOL_FINGER, true);
